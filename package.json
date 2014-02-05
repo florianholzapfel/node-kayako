@@ -1,0 +1,38 @@
+{
+  "name": "node-kayako",
+  "description": "access to the kayako helpdesk api",
+  "version": "0.1.0",
+  "author": {
+    "name": "Florian Holzapfel",
+    "email": "flo.holzapfel@gmail.com"
+  },
+  "homepage": "https://github.com/florianholzapfel/node-kayako",
+  "licenses": [
+    {
+      "type": "The MIT License (MIT)",
+      "url": "http://opensource.org/licenses/MIT"
+    }
+  ],
+  "scripts": {
+    "pretest": "./node_modules/.bin/jshint index.js lib test",
+    "test": "./node_modules/.bin/mocha -R spec ./test --recursive --slow 2s --timeout 5s"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/florianholzapfel/node-kayako.git"
+  },
+  "main": ".",
+  "engines": {
+    "node": "*"
+  },
+  "dependencies": {
+	"request": "~2.30",
+  	"xml2js": "~0.4"
+  },
+  "devDependencies": {
+    "jshint": "~2.4",
+    "mocha": "~1",
+	"chai": "~1.8"
+  },
+  "readmeFilename": "README.md"
+}
