@@ -1,5 +1,5 @@
 # node-kayako
-[![Build Status](https://travis-ci.org/florianholzapfel/node-kayako.png)](https://travis-ci.org/florianholzapfel/node-kayako) [![NPM version](https://badge.fury.io/js/node-kayako.png)](http://badge.fury.io/js/node-kayako) [![Dependency Status](https://david-dm.org/florianholzapfel/node-kayako.png)](https://david-dm.org/florianholzapfel/node-kayako)
+[![NPM version](https://badge.fury.io/js/node-kayako.png)](http://badge.fury.io/js/node-kayako) [![Dependency Status](https://david-dm.org/florianholzapfel/node-kayako.png)](https://david-dm.org/florianholzapfel/node-kayako)
 
 As the name already implies, this project implements the API for [Kayako] [1], a helpdesk system.
 
@@ -18,16 +18,17 @@ In your code:
 ```javascript
 var kayako = require('node-kayako');
 
-var client = new kayako({
-	username: '<company-username>',
-	token: '<user-token>'
+var client = new highrise({
+	host: <kayako-host>,
+	apikey: <kayako-apikey>,
+	secret: <kayako-secret>
 });
 
-client.people.get(function(err, people) {
+client.userorganizations.get(function (err, organizations) {
 	if(err) {
 		console.log(err);
 	} else {
-		console.log(people);
+		console.log(organizations);
 	}
 });
 ```
@@ -36,10 +37,10 @@ client.people.get(function(err, people) {
 You can run the automated unit test using the following command line:
 
 ```
-ACCOUNT=YOUR_ACCOUNT TOKEN=YOUR_ACCOUNT_TOKEN npm test
+HOST=YOUR_KAYAKO_HOST APIKEY=YOUR_APIKEY SECRET=YOUR_SECRET npm test
 ```
 
-```YOUR_ACCOUNT``` and ```YOUR_TOKEN``` need to be replaced with correct values.
+```YOUR_KAYAKO_HOST```, ```YOUR_APIKEY``` and ```YOUR_SECRET``` need to be replaced with correct values.
 
 Although, the unit test is desgined to not modify your Kayako installation (it deletes all objects it creates and does not modify or delete already existing objects), please use it at your **OWN RISK**.
 
