@@ -67,3 +67,18 @@ describe('User Groups', function () {
 		});
 	});
 });
+
+describe('Users', function () {
+	it('Get users', function (done) {
+		client.users.get(function (err, users) {
+			assert.isNull(err, 'there was an error');
+			done();
+		});
+	});
+	it('Get user ID 1', function (done) {
+		client.user.get(1, function (err, user) {
+			assert.isNull(err, 'there was an error');
+			done();
+		});
+	});
+});
