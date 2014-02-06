@@ -32,7 +32,13 @@
   "devDependencies": {
     "jshint": "~2.4",
     "mocha": "~1",
-	"chai": "~1.9"
+	"chai": "~1.9",
+	"blanket": "~1.1"
   },
-  "readmeFilename": "README.md"
+  "readmeFilename": "README.md",
+  "config": {
+	  "blanket": {
+		  "pattern": "node-kayako/lib/"
+	  }
+  }
 }
