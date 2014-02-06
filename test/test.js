@@ -96,6 +96,12 @@ describe('News Subscribers', function () {
 			done();
 		});
 	});
+	it('Get news subscriber ID 1 should return an error', function (done) {
+		client.newssubscriber.get(1, function (err, newssubscriber) {
+			assert.isNotNull(err, 'there was no error');
+			done();
+		});
+	});
 	it('Get news subscriber ID 6', function (done) {
 		client.newssubscriber.get(6, function (err, newssubscriber) {
 			assert.isNull(err, 'there was an error');
