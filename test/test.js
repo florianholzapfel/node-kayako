@@ -38,6 +38,21 @@ describe('General', function () {
 	});
 });
 
+describe('Departments', function () {
+	it('Get departments', function (done) {
+		client.departments.get(function (err, departments) {
+			assert.isNull(err, 'there was an error');
+			done();
+		});
+	});
+	it('Get department ID 1', function (done) {
+		client.department.get(1, function (err, department) {
+			assert.isNull(err, 'there was an error');
+			done();
+		});
+	});
+});
+
 describe('Staff Groups', function () {
 	it('Get staff groups', function (done) {
 		client.staffgroups.get(function (err, staffgroups) {
