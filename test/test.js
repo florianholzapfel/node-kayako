@@ -53,6 +53,21 @@ describe('Departments', function () {
 	});
 });
 
+describe('News Categories', function () {
+	it('Get news categories', function (done) {
+		client.newscategories.get(function (err, newscategories) {
+			assert.isNull(err, 'there was an error');
+			done();
+		});
+	});
+	it('Get news category ID 1', function (done) {
+		client.newscategory.get(1, function (err, newscategory) {
+			assert.isNull(err, 'there was an error');
+			done();
+		});
+	});
+});
+
 describe('Staff Groups', function () {
 	it('Get staff groups', function (done) {
 		client.staffgroups.get(function (err, staffgroups) {
