@@ -38,6 +38,36 @@ describe('General', function () {
 	});
 });
 
+describe('Staff Groups', function () {
+	it('Get staff groups', function (done) {
+		client.staffgroups.get(function (err, staffgroups) {
+			assert.isNull(err, 'there was an error');
+			done();
+		});
+	});
+	it('Get staff group ID 1', function (done) {
+		client.staffgroup.get(1, function (err, staffgroup) {
+			assert.isNull(err, 'there was an error');
+			done();
+		});
+	});
+});
+
+describe('Staff Users', function () {
+	it('Get staff users', function (done) {
+		client.staffusers.get(function (err, staffusers) {
+			assert.isNull(err, 'there was an error');
+			done();
+		});
+	});
+	it('Get staff user ID 1', function (done) {
+		client.staff.get(1, function (err, staff) {
+			assert.isNull(err, 'there was an error');
+			done();
+		});
+	});
+});
+
 describe('User Organizations', function () {
 	it('Get user organizations', function (done) {
 		client.userorganizations.get(function (err, organizations) {
