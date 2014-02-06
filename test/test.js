@@ -68,6 +68,27 @@ describe('News Categories', function () {
 	});
 });
 
+describe('News Items', function () {
+	it('Get news items', function (done) {
+		client.newsitems.get(function (err, newsitems) {
+			assert.isNull(err, 'there was an error');
+			done();
+		});
+	});
+	it('Get news items with news category ID 1', function (done) {
+		client.newsitems.get(1, function (err, newsitems) {
+			assert.isNull(err, 'there was an error');
+			done();
+		});
+	});
+	it('Get news item ID 1', function (done) {
+		client.newsitem.get(1, function (err, newsitem) {
+			assert.isNull(err, 'there was an error');
+			done();
+		});
+	});
+});
+
 describe('Staff Groups', function () {
 	it('Get staff groups', function (done) {
 		client.staffgroups.get(function (err, staffgroups) {
