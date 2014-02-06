@@ -89,6 +89,21 @@ describe('News Items', function () {
 	});
 });
 
+describe('News Subscribers', function () {
+	it('Get news subscribers', function (done) {
+		client.newssubscribers.get(function (err, newssubscribers) {
+			assert.isNull(err, 'there was an error');
+			done();
+		});
+	});
+	it('Get news subscriber ID 6', function (done) {
+		client.newssubscriber.get(6, function (err, newssubscriber) {
+			assert.isNull(err, 'there was an error');
+			done();
+		});
+	});
+});
+
 describe('Staff Groups', function () {
 	it('Get staff groups', function (done) {
 		client.staffgroups.get(function (err, staffgroups) {
