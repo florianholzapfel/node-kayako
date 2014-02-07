@@ -177,6 +177,20 @@ describe('Users', function () {
 			done();
 		});
 	});
+	it('Search users @glueckkanja.com', function (done) {
+		client.users.search({ email: '@glueckkanja.com' },
+			function (err, users) {
+			assert.isNull(err, 'there was an error');
+			done();
+		});
+	});
+	it('Search users florian', function (done) {
+		client.users.search({ fullname: 'florian' },
+			function (err, users) {
+			assert.isNull(err, 'there was an error');
+			done();
+		});
+	});
 	it('Get user ID 1', function (done) {
 		client.user.get(1, function (err, user) {
 			assert.isNull(err, 'there was an error');
