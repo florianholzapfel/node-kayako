@@ -21,10 +21,10 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
 **/
-var highrise = require('..');
+var kayako = require('..');
 var assert = require('chai').assert;
 
-var client = new highrise({
+var client = new kayako({
 	host: process.env.HOST,
 	apikey: process.env.APIKEY,
 	secret: process.env.SECRET
