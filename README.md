@@ -18,7 +18,7 @@ In your code:
 ```javascript
 var kayako = require('node-kayako');
 
-var client = new highrise({
+var client = new kayako({
 	host: <kayako-host>,
 	apikey: <kayako-apikey>,
 	secret: <kayako-secret>
