@@ -26,14 +26,14 @@
     "node": "*"
   },
   "dependencies": {
-	"request": "~2.33",
+    "request": "~2.67",
   	"xml2js": "~0.4"
   },
   "devDependencies": {
-    "jshint": "~2.4",
-    "mocha": "~1",
-	"chai": "~1.9",
-	"blanket": "~1.1"
+    "jshint": "~2.8",
+    "mocha": "~2.3",
+    "chai": "~3.4",
+    "blanket": "~1.2"
   },
   "readmeFilename": "README.md",
   "config": {
