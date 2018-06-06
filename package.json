@@ -1,7 +1,7 @@
 {
   "name": "node-kayako",
   "description": "access to the kayako helpdesk api",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": {
     "name": "Florian Holzapfel",
     "email": "flo.holzapfel@gmail.com"
@@ -26,19 +26,19 @@
     "node": "*"
   },
   "dependencies": {
-    "request": "~2.67",
-  	"xml2js": "~0.4"
+    "request": "^2.87.0",
+    "xml2js": "~0.4"
   },
   "devDependencies": {
-    "jshint": "~2.8",
-    "mocha": "~2.3",
-    "chai": "~3.4",
-    "blanket": "~1.2"
+    "blanket": "~1.2",
+    "chai": "~4.1",
+    "jshint": "^2.9.5",
+    "mocha": "~5.2"
   },
   "readmeFilename": "README.md",
   "config": {
-	  "blanket": {
-		  "pattern": "node-kayako/lib/"
-	  }
+    "blanket": {
+      "pattern": "node-kayako/lib/"
+    }
   }
 }
