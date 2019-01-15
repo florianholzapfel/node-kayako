@@ -1,12 +1,13 @@
 {
   "name": "node-kayako",
   "description": "access to the kayako helpdesk api",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "author": {
     "name": "Florian Holzapfel",
     "email": "flo.holzapfel@gmail.com"
   },
   "homepage": "https://github.com/florianholzapfel/node-kayako",
+  "license": "MIT",
   "licenses": [
     {
       "type": "The MIT License (MIT)",
@@ -32,7 +33,7 @@
   "devDependencies": {
     "blanket": "~1.2",
     "chai": "~4.1",
-    "jshint": "^2.9.5",
+    "jshint": "^2.9.7",
     "mocha": "~5.2"
   },
   "readmeFilename": "README.md",

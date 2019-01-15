@@ -1,7 +1,7 @@
 # node-kayako
 [![NPM version](https://badge.fury.io/js/node-kayako.png)](http://badge.fury.io/js/node-kayako) [![Dependency Status](https://david-dm.org/florianholzapfel/node-kayako.png)](https://david-dm.org/florianholzapfel/node-kayako)
 
-As the name already implies, this project implements the API for [Kayako] [1], a helpdesk system.
+As the name already implies, this project implements the API for [Kayako](http://www.kayako.com), a helpdesk system.
 
 The implementation currently only allows to retrieve data from Kayako. Updating records will be implemented in the future.
 
@@ -45,7 +45,7 @@ HOST=YOUR_KAYAKO_HOST APIKEY=YOUR_APIKEY SECRET=YOUR_SECRET npm test
 Although, the unit test is desgined to not modify your Kayako installation (it deletes all objects it creates and does not modify or delete already existing objects), please use it at your **OWN RISK**.
 
 ## References ##
- * [Kayako REST API] [2]
+ * [Kayako REST API](http://wiki.kayako.com/display/DEV/Kayako+REST+API)
 
 ## Formalia
 
@@ -70,6 +70,3 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 ```
-
-[1]: http://www.kayako.com
-[2]: http://wiki.kayako.com/display/DEV/Kayako+REST+API
